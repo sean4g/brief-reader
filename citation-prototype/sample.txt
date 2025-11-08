@@ -1,0 +1,3 @@
+This is a short brief. Please see [CIT101] for details.
+Another relevant case can be found in [CIT202].
+And finally, refer to [CIT303].
