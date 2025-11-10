@@ -58,12 +58,13 @@ app.get("/citation/:id", (req, res) => {
   res.send(`
     <h1>Citation Details</h1>
     <p>Case: ${citation.plaintiff} v. ${citation.defendant}</p>
-    <p>Reporter: Volume ${citation.volume} ${citation.reporter} Page ${citation.page}</p>
+    <p>Reporter: ${citation.reporter}</p>
+    <p>Volume: ${citation.volume}</p>
+    <p>Page: ${citation.page}</p>
     <p>Year: ${citation.year}</p>
     <hr>
-    <!-- Could add more details like -->
+
     <p>Full Citation: ${citation.plaintiff} v. ${citation.defendant}, ${citation.volume} ${citation.reporter} ${citation.page} (${citation.year})</p>
-    <!-- Could add links to similar cases, related documents, etc. -->
   `);
 });
 
