@@ -49,7 +49,7 @@ app.get("/api/text", (req, res) => {
 
 // Example endpoint for clicked citations
 app.get("/citation/:id", (req, res) => {
-  const id = req.params.id;
+  const id = decodeURIComponent(req.params.id);
   const citation = citationDatabase.get(id);
 
   if (!citation) {
